@@ -1,0 +1,33 @@
+div {
+    background-color: grey;
+}
+body {
+    text-align: center;
+    background-color: grey;
+}
+h1 {
+    font-weight: bold;
+    font-family: serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+h3 {
+    font-family: 'Arvo', serif;
+}
+p {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 22px;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+#jumbo {
+    font-family: 'Anton', sans-serif;
+    background-color: red;
+    padding: 10px;
+    margin: auto;
+    text-align: left;
+}

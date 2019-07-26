@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html body {
+    padding: 1rem;
+    background-color: #752a11;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%2363240e' fill-opacity='0.72'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.72'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container {
+    display: grid;
+    grid:
+        'bruins patriots'
+        'red_sox celtics';
+}
+
+#bruins {
+    background: yellow;
+    padding: 1rem;
+    border-radius: 2rem;
+    grid-area: bruins;
+}
+
+#patriots {
+    background: blue;
+    padding: 1rem;
+    border-radius: 2rem;
+    grid-area: patriots;
+}
+
+#celtics {
+    background: green;
+    padding: 1rem;
+    border-radius: 2rem;
+    grid-area: celtics;
+}
+
+#red_sox {
+    background: red;
+    padding: 1rem;
+    border-radius: 2rem;
+    grid-area: red_sox;
+}
+
+
+#red_sox button {
+    background-color: red;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#bruins button {
+    background-color: yellow;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#celtics button {
+    background-color: green;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#patriots button {
+    background-color: blue;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+img {
+    padding: 1.2em;
+    height: 285px;
+    width: 285px;
+}
+
+a {
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+}
+
+@media (min-width: 375px) {
+    .container {
+        display: grid;
+        grid:
+            'bruins'
+            'patriots'
+            'red_sox'
+            'celtics';
+    }
+}
